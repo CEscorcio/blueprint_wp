@@ -1,0 +1,16 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /blueprint_wp/
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^assets/css/(.*) /blueprint_wp/wp-content/themes/roots-master/assets/css/$1 [QSA,L]
+RewriteRule ^assets/js/(.*) /blueprint_wp/wp-content/themes/roots-master/assets/js/$1 [QSA,L]
+RewriteRule ^assets/img/(.*) /blueprint_wp/wp-content/themes/roots-master/assets/img/$1 [QSA,L]
+RewriteRule ^plugins/(.*) /blueprint_wp/wp-content/plugins/$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /blueprint_wp/index.php [L]
+</IfModule>
+
+# END WordPress
