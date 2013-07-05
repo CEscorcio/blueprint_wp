@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'blueprint');
+define( 'DB_NAME', 'blueprint' );
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define( 'DB_PASSWORD', 'root' );
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define( 'DB_HOST', 'localhost' );
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -59,7 +59,7 @@ define('NONCE_SALT',       'o 3d&MU=X?rAfU!Z. !5ju8Tw3?Hn5oG|jN0.5RLcVW+[JE`@@m-
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'bp_';
+$table_prefix = 'wp_';
 
 /**
  * WordPress Localized Language, defaults to English.
