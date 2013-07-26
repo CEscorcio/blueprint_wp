@@ -1,6 +1,9 @@
 <?php
 /*
 Template Name: Col / Sidebar
+*
+* 
+* @since 1.0
 */
 ?>
 
